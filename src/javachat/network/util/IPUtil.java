@@ -39,7 +39,7 @@ public class IPUtil {
 			return in.readLine(); //you get the IP as a String
 		} catch (IOException ex) {
 		} finally {
-			try { in.close(); } catch (IOException ex) {}
+			try { in.close(); } catch (Exception ex) {}
 		}
 		return null;
 	}
