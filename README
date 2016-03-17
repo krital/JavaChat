@@ -7,3 +7,6 @@ When running as the server a local client is created to connect to it.
 --------------------------------------------------------------------------------
 Code in this project is licensed under the GNU GENERAL PUBLIC LICENSE
 http://www.gnu.org/licenses/gpl.txt
+
+Written by Chris Hallson and originally found here: https://github.com/DrLabman/JavaChat
+Only slight modification to suit my environment.
