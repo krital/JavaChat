@@ -9,4 +9,5 @@ Code in this project is licensed under the GNU GENERAL PUBLIC LICENSE
 http://www.gnu.org/licenses/gpl.txt
 
 Written by Chris Hallson and originally found here: https://github.com/DrLabman/JavaChat
-Only slight modification to suit my environment.
+Only slight modification to suit my environment.  And handle one exception (could not run
+without whatismyip.com).

@@ -18,9 +18,9 @@ fi
 # classpath + no other jvm options + main class
 if [ -z "$CLASSPATH" ]
 then
-  CLASSPATH="$CHAT_HOME/dist/JavaChat.jar:$CHAT_HOME/lib/\*"
+  CLASSPATH="$CHAT_HOME/dist/JavaChat.jar:$CHAT_HOME/lib/*"
 else
-  CLASSPATH="$CHAT_HOME/dist/JavaChat.jar:$CHAT_HOME/lib/\*:$CLASSPATH"
+  CLASSPATH="$CHAT_HOME/dist/JavaChat.jar:$CHAT_HOME/lib/*:$CLASSPATH"
 fi
 CHAT_OPTS=
 CHAT_ARGS=javachat.JavaChat
@@ -30,9 +30,9 @@ CHAT_ARGS=javachat.JavaChat
 if [ "x$1" = x--gumshoe ]
 then
   ## make sure gumshoe is ready
-  if [ -z "$GUMSHOE_HOME ]
+  if [ -z "$GUMSHOE_HOME" ]
   then
-    echo ERROR: UMSHOE_HOME environment variable is not set 1>&2
+    echo ERROR: GUMSHOE_HOME environment variable is not set 1>&2
     exit 1
   fi
   if [ ! -f $GUMSHOE_HOME/gumshoe-probes/target/gumshoe-probes-0.1.0-SNAPSHOT.jar -o \
@@ -57,4 +57,4 @@ then
 fi
 
 ## run it
-java -classpath "$CLASSPATH" $CHAT_OPTS $CHAT_ARGS > /dev/null 2>&1
+java -classpath "$CLASSPATH" $CHAT_OPTS $CHAT_ARGS
